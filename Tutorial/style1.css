@@ -1,0 +1,19 @@
+body{
+    background-color: #d3d3d3;
+}
+h1{
+    font-family: Times New Roman;
+    text-align: center;
+    color: indigo;
+}
+
+p {
+    font-family: helvetica;
+    font-size: 120%;
+    color: brown;
+}
+ul{
+    font-family: helvetica;
+    font-size: 120%;
+    color: brown;   
+}

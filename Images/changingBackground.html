@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cats{
+            width: 20vw;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body id = "body">
+    <div>
+        <img onclick="bgChanger('black')" class = "cats" src="https://www.rd.com/wp-content/uploads/2021/01/GettyImages-1203623294-e1611859551414.jpg?w=1999" alt="Black Cat" >
+        <img onclick="bgChanger('white')" class = cats src="https://i.pinimg.com/originals/b0/15/4c/b0154cfc2fe3a664ac8f679df4debf56.jpg" alt="white cat">
+        <img onclick="bgChanger('grey')" class = "cats" src="https://worldanimalfoundation.org/wp-content/uploads/2025/02/gray-cat.jpg" alt="Grey cat">
+    </div>
+    <!-- <img src="img/cat.webp" alt="Cute cats image"> -->
+</body>
+<script>
+    function bgChanger(color){
+        document.body.style.backgroundColor = color;
+    }
+    // document.getElementById("black").onclick =(e) => {
+    //     document.body.style.backgroundColor = "black";
+    // }
+</script>
+</html>
