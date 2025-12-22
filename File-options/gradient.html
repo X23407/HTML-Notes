@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        /* background: repeating-linear-gradient(black,grey);
+        background: repeating-linear-gradient(to left, black,grey);
+        background: repeating-linear-gradient(to right, black,grey);
+        background: repeating-linear-gradient(to bottom, black,grey);
+        background: repeating-linear-gradient(circle, black,grey); */
+        /* background: linear-gradient(45deg, red, yellow); */
+        /* background: radial-gradient(circle, red, yellow);
+        background: radial-gradient(ellipse, red, yellow); */
+        /* background: radial-gradient(circle at top left, aqua, navy); */
+        /* background: radial-gradient(ellipse at 30% 70%, aqua, navy); */
+        background: linear-gradient(to right,violet 5vw,indigo 5vw,blue 5vw,green 5vw,yellow 5vw,orange 30vw,red 1vw);
+        
+    }
+</style>
+<body>
+    <select name="select" id="select" onchange="changer()">
+        <option value="radial">radial-gradient</option>
+        <option value="linear">Lime</option>
+        <option value="vertical">vertical</option>
+        <option value="horizontal">horizontal</option>
+        <option value="horizontal-left">horizontal-left</option>
+    </select>
+    
+    <script>
+        function changer(){
+            let value = document.getElementById("select").value;
+            let dict = {
+                 "linear" : "green",
+                 "radial" : `radial-gradient(circle, aqua, navy)`,
+                 "vertical" : `linear-gradient(to bottom, green, lightgreen)`,
+                 "horizontal" : `linear-gradient(to right, purple, pink)`,
+                 "horizontal-left" : `linear-gradient(to left, purple, pink)`,
+                }
+            document.body.style.background = dict[value];
+            // alert(value);
+        }
+        function gradient(){
+            let body = document.body;
+            // body.style.backgroundColor = "green";
+            body.style.background = "lime";
+        }
+        // gradient();
+    </script>
+    
+</body>
+</html>

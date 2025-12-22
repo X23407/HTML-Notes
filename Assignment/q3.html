@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 2</title>
+    <link rel="stylesheet" href = "q3.css" >
+    <script>
+        let val = false;
+        function validate(){
+            let first = document.getElementById("first").value;
+            let last = document.getElementById("last").value;
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let state=document.getElementById("state").value;
+            let name_patern = /^[a-z,A-Z]+$/;
+            let username_p = /^[a-z,A-Z,\_,\d]+$/;
+            let password_p = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).+$/;
+            if (!name_patern.test(first)){
+                alert("First Name should only contain char");
+                return
+            }
+            if (!name_patern.test(last)){
+                alert("Last Name should only contain char");
+                return;
+            }
+            if (!username_p.test(username)){
+                alert("Username can only use character, underscore or digit.")
+                return
+            }
+            if (!password_p.test(password)){
+                alert("Password must use atleast a lowecase, a uppercase, Special Character or digit.")
+                return;
+            }
+            if (state=="0"){
+                alert("State should be selected")
+                return;
+            }
+            let text = document.getElementById("bio").value;
+            if (document.getElementById("married").checked){
+                text += " " + "Married"
+            }else if (document.getElementById("single").checked){
+                text += " " + "Single"
+            }
+            document.getElementById("bio").value = text;
+            let course = '';
+            if (document.getElementById("cop3330").checked){
+               course = "COP 3330";
+            }
+            if (document.getElementById("cop3331").checked){
+                course = "COP 3331";
+            }
+            if (document.getElementById("cop3066").checked){
+                alert("You can't chosse COP 3066 subject");
+                return;
+            }
+            if (course == ""){
+                alert("Please Select a course");
+                return;
+            }
+            val = true;
+        }
+
+        function submit(){
+            if (val ==true){
+                document.getElementById("my_form").reset();
+            }
+            alert("Please validate the form first");
+        }
+    </script>
+</head>
+<body>
+    <center><fieldset>
+            <legend>Registration Form</legend>
+            <form id="my_form">
+                <label for="first">First Name</label>
+                <input type = "text" id ='first' placeholder="Yatish"> <br>
+                <label for="last">Last Name</label>
+                <input type="text" id = 'last' placeholder="Ray"> <br>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Yatish0077" > <br>
+                <label for="password">Password</label>
+                <input type="pasword" name="password" id="password"> <br>
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="0">Select</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Kerela">Kerela</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Madhya Pradesh" >Madhya Pradesh</option>
+                </select> <br>
+                <label for="Marital">Marital Status</label> <br>
+                <input type="radio" name="Marital" id="single" value="single" checked>
+                <label for="single">Single</label> <br>
+                <input type="radio" name="Marital" id="married" value="Married" > 
+                <label for="married">Married</label> <br>
+                <label for="bio">Bio:</label> <br>
+                <textarea name="bio" id="bio"></textarea> <br>
+                <div style="justify-items: center;">
+                    <label for="course">course</label> <br>
+                    <input type="checkbox" name="cop3330" id="cop3330">
+                    <label for="cop3330">COP 3330</label> <br>
+                    <input type="checkbox" name="cop3331" id="cop3331">
+                    <label for="cop3331">COP 3331</label> <br>
+                    <input type="checkbox" name="cop3066" id="cop3066">
+                    <label for="cop3066">COP 3066</label> <br>
+                </div>
+                <input type="button" value="validate" onclick="validate()" id = "submit">
+                <input type="button" value="submit" onclick="submit()" id = "submit">
+            </form>
+        </fieldset></center>
+
+    <script>
+            document.getElementById("submit").addEventListener("keydown",(e) =>{
+                console.log(e);
+            if (e.key == "Enter"){
+                validate();
+            }
+        })
+    </script>
+</body>
+</html>

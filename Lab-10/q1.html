@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body align="center">
+    <center><h1>Student registeration form</h1></center>
+    <div>
+        <fieldset id ="main">
+            <legend style="color: rgb(138, 42, 165);">Fill the information below</legend>
+            <form action="">
+                <label for="name" class = "head">Name</label>
+                <input type="text" minlength="3ch" maxlength="25" width="25ch" id = "name" placeholder="john"><br>
+                <label for="email" class ="head">Email</label>
+                <input type="email" minlength="5ch" placeholder="john@gmail.com" id ="email"><br>
+                <label for="password" class = "head">Password</label>
+                <input type="password" minlength="5ch" id = "password"> <br>
+                <label for="bio" class="head">Bio<sub>(short)</sub></label>
+                <textarea name="bio" id="bio" style="width: 28ch;height: 5lh;margin-top: .9vh;font-size: larger;"
+                placeholder="Describe about yourself, your hobby, intrest, etc."
+                ></textarea><br>
+                
+                <!-- Radio Button -->
+                 <fieldset style="border-radius: 2vw;">
+                    <legend>Select Your gender</legend>
+                     <input type="radio" name = "gender" id = "male" value = "male" checked>
+                     <label for="male" class="head" >Male</label>
+                     <input type="radio" name = "gender" id = "female" value = "female">
+                     <label for="female" class="head">Female</label>
+                 </fieldset>
+                 <fieldset style="border-radius: 2vw;margin-top: 1vh;">
+                    <legend >Select Your age group</legend>
+                    <input type="radio" name = "age" value="below 12" id = "12-">
+                    <label for="12-18" class="head">Below 12</label><br>
+                    <input type="radio" name = "age" value="between 12 and 18" id = "12-18">
+                    <label for="12-18" class="head">Below 12-18</label><br>
+                    <input type="radio" name = "age" value="between 18-25" id = "18-25" checked>
+                    <label for="18-25" class="head">Below 18-25</label><br>
+                    <input type="radio" name = "age" value="between 25-40" id = "25-40">
+                    <label for="25-40" class="head">Below 25-40</label><br>
+                    <input type="radio" name = "age" value="above 40" id = "40+">
+                    <label for="40+" class="head">Above 40</label><br>
+                 </fieldset>
+                 <div>
+                    <input type="submit" value = "Submit" class ="interactive">
+                    <input type="reset" value = "Reset" class = "interactive">
+                 </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

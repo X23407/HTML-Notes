@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EG 10</title>
+</head>
+<body>
+    <script>
+        //Char at
+        var str = "Hello";
+        console.log(str.charAt(0))
+        console.log(str.charAt(3))
+        console.log(str.charAt(4))
+        console.log(str.charAt(5))
+        console.log(str.charAt(55))
+        //concat
+        var str1 = " ";
+        var str2= "World!";
+        let result = str.concat(str1,str2);
+        console.log(result);
+        //index of method
+        str = "Hello World!";
+        console.log(str.indexOf("World"));
+        console.log(str.indexOf("!"))
+        console.log(str.indexOf("o",5))
+        console.log(str.indexOf("ooo"))
+        //substring
+        console.log("---substr----");
+        result = str.substring(7,11);
+        console.log(result);
+        //splitting
+        console.log("---Spliting----");
+        result = str.split(" ");
+        console.log(result);
+        str = "one,two,three,four";
+        result = str.split(",",3);
+        console.log(result);
+    </script>
+    
+</body>
+</html>

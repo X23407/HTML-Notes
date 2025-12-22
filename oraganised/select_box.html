@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Box Demo</title>
+</head>
+<body>
+
+    <h4>Select Box</h4>
+    <ul>
+        <li>element: &lt;select&gt; with &lt;option&gt; children</li>
+        <li>attributes: name, id, multiple, size, required</li>
+        <li><b>Syntax :</b> &lt;select name="options"&gt; &lt;option&gt;...&lt;/option&gt; &lt;/select&gt;</li>
+    </ul>
+
+    <!-- Examples -->
+    <select name="fruits">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+    </select>
+
+    <hr>
+
+    <h4>Select Box with Multiple Selection</h4>
+    <ul>
+        <li>attribute: multiple</li>
+        <li>allows selecting more than one option</li>
+        <li><b>Syntax :</b> &lt;select name="items" multiple&gt; ... &lt;/select&gt;</li>
+    </ul>
+
+    <select name="colors" multiple size="3">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+    </select>
+
+    <hr>
+
+    <h4>Select Box with Default Selected Option</h4>
+    <ul>
+        <li>attribute: selected</li>
+        <li>pre-selects an option when the page loads</li>
+        <li><b>Syntax :</b> &lt;option value="x" selected&gt; ... &lt;/option&gt;</li>
+    </ul>
+
+    <select name="country">
+        <option value="india" selected>India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
+
+    <hr>
+
+</body>
+</html>

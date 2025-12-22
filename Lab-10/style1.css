@@ -1,0 +1,35 @@
+#fieldset{
+    border-radius: 2vw;
+    /* border-radius: 12px dotted black; */
+    border: 3px dotted black;
+    display: inline-block;
+}
+.label{
+    margin-top: 1vh;
+    font-size: x-large;
+    width: 20vw;
+    background-color: aliceblue;
+    display: inline-block;
+    height: 1lh;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.input{
+    display: inline-block;
+    font-size: x-large;
+    width: 30ch;
+}
+textarea{
+    width: 50ch;
+    font-size: x-large;
+    height: 3lh;
+}
+#fieldset:hover{
+    border: 3px dotted blue;
+    transition: border-color 0.3s ease;
+    /* background-color: aqua; */
+}
+#fieldset:hover #legend {
+    color:  blue;
+    /* background-color: aqua; */
+}

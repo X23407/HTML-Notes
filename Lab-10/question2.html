@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body style="text-align: center;">
+    <center>
+        <h1><b><U>>> Feedback <<</U></b></h1>
+    </center>
+    <fieldset id="fieldset">
+        <legend style="text-align: right;" id="legend"><i>Feedback Form</i></legend>
+        <form >
+            <label for="name" class="label">Name </label>
+            <input type="text" class="input" placeholder="john" id = "name" name="name"> <br>
+            <label for="email" class="label">Email</label>
+            <input type="email" class ="input" id ="email"><br>
+            <label for="password" class="label">Password</label>
+            <input type="password" name="password" id="password" class="input">
+            <center><label for="comment" class="label" style="width: fit-content;"
+                >Enter comments below</label></center>
+            <textarea name="comment" id="comment" placeholder="Enter comments here..."></textarea> <br>
+            <fieldset style="display: inline-block;">
+                <legend>Experience rating</legend>
+                <input type="radio" name="star" id="5star">
+                <label for="5star">★★★★★</label><br> 
+                <input type="radio" name="star" id="4star">
+                <label for="4star">★★★★✰</label> <br>
+                <input type="radio" name="star" id="3star">
+                <label for="3star">★★★✰✰</label><br>
+                <input type="radio" name="star" id="2star">
+                <label for="2star">★★✰✰✰</label><br> 
+                <input type="radio" name="star" id="1star">
+                <label for="1star">★✰✰✰✰</label>
+            </fieldset>
+            <div style="display: inline-block;"><br>
+                <fieldset style="display: inline-block;margin-left: 6vw;">
+                    <legend>session preference</legend>
+                    <input type="radio" name="preference" id="morning">
+                    <label for="morning">Morning</label>
+                    <input type="radio" name="preference" id="afternoon">
+                    <label for="afternoon">After-Noon</label>
+                    <input type="radio" name="preference" id="Evening">
+                    <label for="Evening">Evening</label>
+                </fieldset><br><br><br><br>
+            </div><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset" >
+        </form>
+    </fieldset>
+</body>
+</html>

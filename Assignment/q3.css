@@ -1,0 +1,65 @@
+fieldset{
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20vh;
+    border-radius: 30px;
+    border: solid black;
+    background: radial-gradient(circle, white,lightgrey,grey);
+}
+body{
+    font-size: larger;
+}
+legend{
+    text-align: right;
+    box-shadow: cyan 0px 5px 15px;
+    border-radius: 3vh;
+}
+label{
+    display: inline-block;
+    width: 13ch;
+    text-align: left;
+    margin-top: 1vh;
+    padding-left: 3ch;
+}
+input[type="text"] input[type="password"] {
+    display: inline-block;
+    width: 25ch;
+    margin-top: 1vh;
+}
+select{
+    display: inline-block;
+    width: 24ch;
+}
+
+textarea{
+    width: 40ch;
+    height: 3lh;
+}
+
+legend:hover{
+    font-size: x-large;
+    transition: all 0.7 ease;
+    animation: border 3s ease infinite;
+}
+@keyframes border {
+    0%{
+        border: solid red;
+        box-shadow: pink 0px 5px 15px;
+    }
+    30%{
+        border: solid green;
+        box-shadow: lime 0px 5px 15px;
+    }
+    50%{
+        border: solid Blue;
+        box-shadow: cyan 0px 5px 15px;
+    }
+    70%{
+        border: solid purple;
+        box-shadow: orangered 0px 5px 15px;
+    }100%{
+        border: solid black;
+        box-shadow: lightgrey 0px 5px 15px;
+        rotate: 360deg;
+    }
+}

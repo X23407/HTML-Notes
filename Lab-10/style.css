@@ -1,0 +1,47 @@
+.head{
+    display: inline-block;
+    width: 25ch;
+    margin-top: .9vh;
+    text-align: left;
+    font-size: larger;
+}
+
+#main{
+    display: inline-block;
+    text-align: center;
+    border: 12px double;
+    border-radius: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+body{
+    user-select: none;
+}
+input{
+    font-size: larger;
+}
+.interactive{
+    width: 10vw;
+    margin-top: 2vh;
+}
+
+.head:hover{
+    background-color: aqua;
+}
+.data:hover{
+    background-color: aqua;
+}
+.interactive:hover{
+    border: 3px solid salmon;
+    font-size: x-large;
+    width: fit-content;
+    /* background-color: lime; */
+    box-shadow: 0 0 100px grey;
+
+}
+
+.interactive:active{
+    background-color: aqua ;
+    box-shadow: 0 0 10px gray;
+
+}

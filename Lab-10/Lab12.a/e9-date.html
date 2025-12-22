@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function print(message,value,extra = 0){
+            message += "    "+value+"<hr>";
+            document.write(message);
+        }
+        let dob = new Date(2007,6,18);
+        let later = new Date(2025,10,25,18,43,10);
+        let now = new Date();
+        let elasped = now-dob;
+        print("Elasped : ",elasped);
+        print("dob : ",dob);
+        print("later : ",later);
+        print("now : ",now);
+        print("later.getFullYear() : ",later.getFullYear());
+        print("later.getMonth() : ",later.getMonth());
+        print("later.getDate() : ",later.getDate());
+        print("later.getDay() : ",later.getDay());
+        print("later.getHours() : ",later.getHours());
+        print("later.getUTCHours() : ",later.getUTCHours());
+
+        print("later.toString() : ",later.toString());
+        print("later.toUTCString() : ",later.toUTCString());
+        print("later.toLocaleDateString() : ",later.toLocaleDateString());
+        print("later.toLocaleTimeString() : ",later.toLocaleTimeString());
+        print("later.toISOString() : ",later.toISOString());
+
+    </script>
+</body>
+</html>

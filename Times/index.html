@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Measuring time</h1>
+    <ul>
+        <li>Date <pre id = "clock">09:30</pre></li>
+        <li>Date.now()</li>
+    </ul>
+    <fieldset>
+        <legend>Stopwatch</legend>
+        <center><h1>00:00</h1></center>
+        <div style="justify-content: equally-spaced;"> 
+        <input type="button" value = "Start" onclick="funStart()" id = start>
+        <input type="button" value = "Pause" onclick="funPause()" id = pause>
+        <input type="button" value="End" id = "end">
+        </div>
+    </fieldset>
+
+    <script>
+        let start = 0
+        let pause = false;
+
+        function funStart(){
+            if (start){
+                start = 0;
+                document.getElementById("start").style.backgroundColor = "pink";
+            }else{
+                document.getElementById("start").style.backgroundColor = "lime";
+            }
+        }
+
+        function funPause(){
+            if (!pause){
+                document.getElementById("start").style.backgroundColor = "grey";
+                document.getElementById("pause").style.backgroundColor = "lime";
+                document.getElementById("pause").innerHTML = "Paused";
+            }else{
+                pause = false;
+                document.getElementById("start").style.backgroundColor = "grey";
+                document.getElementById("pause").style.backgroundColor = "lime";
+            }
+        }
+
+        function displayTime(){
+            let clock = document.getElementById("clock")
+            let date = new Date();
+            clock.innerHTML = date.getSeconds();
+            // clock.innerHTML = new Date(Date.now());
+            // alert(date.now());
+        }
+        displayTime();
+        // alert("hello");
+        document.writeln(new Date.now());
+        console.log(Date.now());
+        document.writeln("HEllo");
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    background:linear-gradient(to right, red,orange,pink,orange,red);
+    zoom: 80%;
+    text-align: center;
+}
+*{
+    font-size: larger;
+    font-weight: bolder;
+}
+input::placeholder{
+    color: rgb(180, 166, 150);
+}
+input{
+    background: transparent;
+    display: flex;
+}
+#course{
+    display: inline-flex;
+    margin-top: 10px;
+    width: 10ch;
+}
+button{
+    background: transparent;
+    margin-top: 20px;
+    width: 8ch;
+}
+fieldset{
+    display: inline-flex;
+    margin-top: 8vh;
+    border-radius: 3vw;
+}
+
+#head{
+    margin-bottom: 2vh;
+    display: inline-flex;
+    background:linear-gradient(to right, blue,indigo,red,green);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+button:active{
+    background: none;
+    border-radius: 300px solid black;
+    transition: all .2s;
+}
+label:hover,button:hover{
+    /* color: aqua; */
+    background: linear-gradient(to right, blue,indigo,red,green);
+    background-clip: text;
+    color: transparent;
+    transition: all 0.7s ease;
+    text-shadow: 3vw brown;
+}

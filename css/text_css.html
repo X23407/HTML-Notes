@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Text-decoration</h4>
+    <ul>
+        <li>line type : underline, overline, line-through</li>
+        <li>line style: dashed ,wavy,solid</li>
+        <li>line color: dashed ,wavy,solid</li>
+        <li>line width: 1px</li>
+    </ul>
+    <ul>
+        <li style="text-decoration: line-through solid black 1px; ">This is a underline text with wavy</li>
+        <li style="text-decoration: underline wavy blue;">This is a underline text with wavy</li>
+        <li style="text-decoration: overline double green;">This is a overline text with double 3px</li>
+    </ul> <hr>
+
+    <h4>Text-weight</h4>
+    <ul>
+        <li>weight values: normal, bold, lighter, bolder</li>
+        <li>numeric values: 100, 400, 700, 900</li>
+        <li>inherit/initial: inherit, initial</li>
+    </ul>
+    <ul>
+        <li style="font-weight: normal;">This is normal text</li>
+        <li style="font-weight: bold;">This is bold text</li>
+        <li style="font-weight: 700;">This is text with numeric weight 700</li>
+    </ul> <hr>
+
+    <h4>Text-align</h4>
+    <ul>
+        <li>alignment values: left, right, center, justify : (each line has equal width)</li>
+        <li>inherit/initial: inherit, initial</li>
+        <li>global values: unset</li>
+    </ul>
+    <ul>
+        <li style="text-align: left;">This text is aligned to the left</li>
+        <li style="text-align: center;">This text is aligned to the center</li>
+        <li style="text-align: right;">This text is right allign</li>
+        <p style="text-align: justify;width: 200px;">This is a sample paragraph with the text allin justify.
+            The width of this para is intentally lower so that 
+            justify effect can be clearly seen</p>
+    </ul> <hr>
+
+    <h4>Font-style</h4>
+    <ul>
+        <li>style values: normal, italic, oblique</li>
+        <li>inherit/initial: inherit, initial</li>
+        <li>global values: unset</li>
+    </ul>
+
+    <ul>
+        <li style="font-style: normal;">This is normal text</li>
+        <li style="font-style: italic;">This is italic text <b>Preffered</b></li>
+        <li style="font-style: oblique;">This is oblique text. oblique just slant the word mechanically but italics has seprate design.</li>
+    </ul> <hr>
+
+    <h4>Font-family</h4>
+    <ul>
+        <li>syntax : font-faimily : specific-dont, generic, fallback</li>
+        <li>specific fonts: "Arial", "Times New Roman", "Courier New"</li>
+        <li>generic families: serif, sans-serif, monospace, cursive, fantasy</li>
+        <li>fallbacks: always end with a generic family for reliability</li>
+    </ul>
+
+    <ul>
+        <li style="font-family: Arial, sans-serif;">This text uses Arial (sans-serif)</li>
+        <li style="font-family: 'Times New Roman', serif;">This text uses Times New Roman (serif)</li>
+        <li style="font-family: 'Courier New', monospace;">This text uses Courier New (monospace)</li>
+    </ul> <hr>
+
+    <h4>Font-size</h4>
+    <ul>
+        <li>absolute values: xx-small, x-small, small, medium, large, x-large, xx-large</li>
+        <li>relative values: larger, smaller, inherit, initial, unset</li>
+        <li>length/percentage: px, em, rem, %, pt</li>
+        <li>syntax: font-size: value;</li>
+    </ul>
+
+    <ul>
+        <li style="font-size: 16px;">This text uses font-size: 16px (absolute length)</li>
+        <li style="font-size: larger;">This text uses font-size: larger (relative to parent)</li>
+        <li style="font-size: 1.5em;">This text uses font-size: 1.5em (relative to parent’s font size)</li>
+    </ul>
+
+        
+</body>
+</html>

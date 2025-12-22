@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mailing list signup</h1>
+    <fieldset>
+        <legend>Join our email list</legend>
+        <form action="/mailinglist.php" method="post">
+            <p>Get news about the band such as tour dates and special MP3 releases
+                sent to your own in-box.</p>
+                <ol>
+                    <li>
+                        <label for="name" style="width: 15ch;">Name</label>
+                        <input type="text" placeholder="John" id ="name" class = "data">
+                    </li>
+                    <li>
+                        <label for="email" style="width: 15ch;">Email</label>
+                        <input type="email" id = "email" placeholder = "john@example.com" class="data">
+                    </li>
+                </ol>
+                <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>

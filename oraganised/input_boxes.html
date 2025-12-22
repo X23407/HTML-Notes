@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Types Demo</title>
+</head>
+<body>
+
+    <h4>Text Input</h4>
+    <ul>
+        <li>type="text"</li>
+        <li>attributes: placeholder, maxlength, required</li>
+        <li>syntax: &lt;input type="text" placeholder="Enter name"&gt;</li>
+    </ul>
+    <input type="text" placeholder="Enter your name">
+    <hr>
+
+    <h4>Password Input</h4>
+    <ul>
+        <li>type="password"</li>
+        <li>attributes: minlength, maxlength, required</li>
+        <li>syntax: &lt;input type="password" placeholder="Enter password"&gt;</li>
+    </ul>
+    <input type="password" placeholder="Enter password">
+    <hr>
+
+    <h4>Email Input</h4>
+    <ul>
+        <li>type="email"</li>
+        <li>attributes: required, multiple</li>
+        <li>syntax: &lt;input type="email" placeholder="Enter email"&gt;</li>
+    </ul>
+    <input type="email" placeholder="Enter email">
+    <hr>
+
+    <h4>Number Input</h4>
+    <ul>
+        <li>type="number"</li>
+        <li>attributes: min, max, step</li>
+        <li>syntax: &lt;input type="number" min="1" max="10"&gt;</li>
+    </ul>
+    <input type="number" min="1" max="10" step="1">
+    <hr>
+
+    <h4>Date Input</h4>
+    <ul>
+        <li>type="date"</li>
+        <li>attributes: min, max, value</li>
+        <li>syntax: &lt;input type="date"&gt;</li>
+    </ul>
+    <input type="date">
+    <hr>
+
+    <h4>Checkbox</h4>
+    <ul>
+        <li>type="checkbox"</li>
+        <li>attributes: checked, value</li>
+        <li>syntax: &lt;input type="checkbox" checked&gt;</li>
+        <li><i><b>Note1: </b>You have to check for each boxes/button individually whether 
+        they are clicked or not.</i></li>
+        <li><i><b>Note2:</b> Name should be same if it is in group</i></li>
+    </ul>
+    <label><input type="checkbox" checked> Option 1</label>
+    <label><input type="checkbox"> Option 2</label>
+    <hr>
+    
+    <h4>Radio Button</h4>
+    <ul>
+        <li>type="radio"</li>
+        <li>attributes: name, value, checked</li>
+        <li>syntax: &lt;input type="radio" name="gender"&gt;</li>
+        <li><i><b>Note1: </b>You have to check for each boxes/button individually whether 
+            they are clicked or not.</i></li>
+        <li><i><b>Note2:</b> Name should be same if it is in group</i></li>
+    </ul>
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <hr>
+
+    <h4>File Upload</h4>
+    <ul>
+        <li>type="file"</li>
+        <li>attributes: accept, multiple</li>
+        <li>syntax: &lt;input type="file" accept="image/*"&gt;</li>
+        <li>Accept: "images/*" , "application/*","audio/*","video/*"</li>
+        <li>Accept: ".html,.js,.css"</li>
+    </ul>
+    <input type="file" accept="image/*">
+    <hr>
+
+    <h4>Color Picker</h4>
+    <ul>
+        <li>type="color"</li>
+        <li>attributes: value</li>
+        <li>syntax: &lt;input type="color"&gt;</li>
+    </ul>
+    <input type="color">
+    <hr>
+
+    <h4>Range Slider</h4>
+    <ul>
+        <li>type="range"</li>
+        <li>attributes: min, max, step, value</li>
+        <li>syntax: &lt;input type="range" min="0" max="100"&gt;</li>
+    </ul>
+    <input type="range" min="0" max="100" step="10">
+    <hr>
+
+    <h4>Submit Button</h4>
+    <ul>
+        <li>type="submit"</li>
+        <li>attributes: value</li>
+        <li>syntax: &lt;input type="submit" value="Submit"&gt;</li>
+    </ul>
+    <input type="submit" value="Submit">
+    <hr>
+
+</body>
+</html>

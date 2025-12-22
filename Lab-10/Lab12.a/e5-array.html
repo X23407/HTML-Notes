@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e5</title>
+</head>
+<body>
+    <script>
+        function print(message,array){
+            let text = message + "<br> [ ";
+            array.forEach(element => {
+                text += element + " ";
+            });
+            text += "]<br><hr>"
+            document.write(text);
+        }
+        let color = ["red","black","blue","green"];
+        print("The Following array is created using array literal",color);
+        let name = new Array();
+        name[0] = "Yatish";
+        name[1] = "Dhruv";
+        name[2] ="John";
+        name[3] ="Daksh";
+        print("The Following array is created using by appending element in emptya array",name);
+        let marks = new Array(12,13,14,15);
+        print("The Following array is created using new Array",name);
+
+        
+    </script>
+</body>
+</html>

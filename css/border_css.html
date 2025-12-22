@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Border</h4>
+    <ul>
+        <li>syntax: border: width style color;</li>
+        <li>border-style: solid, dashed, dotted, double, groove, ridge, inset, outset</li>
+        <li>border-width: thin, medium, thick, or specific values (px, em, etc.)</li>
+        <li>border-color: any valid CSS color (name, hex, rgb, etc.)</li>
+    </ul>
+
+    <ul>
+        <li style="border: 2px solid red;">This text has a solid red border (2px)</li>
+        <li style="border: 3px dashed blue;">This text has a dashed blue border (3px)</li>
+        <li style="border: 4px dotted green;">This text has a dotted green border (4px)</li>
+    </ul> <hr>
+    <h4>Border-radius</h4>
+    <ul>
+        <li>values: length units (px, em, rem), percentage (%)</li>
+        <li><b>Syntax : </b> border-radius: value;</li>
+        <li>can be applied to each corner: border-top-left-radius, border-top-right-radius, border-bottom-left-radius, border-bottom-right-radius</li>
+    </ul>
+
+    <!-- Examples -->
+    <div style="border: 2px solid red; border-radius: 10px; margin:5px; padding:10px; width:200px;">
+        This div has rounded corners (10px radius)
+    </div>
+
+    <div style="border: 2px solid blue; border-radius: 50%; margin:5px; padding:10px; width:200px;">
+        This div has fully circular corners (50%)
+    </div>
+
+    <div style="border: 2px solid green; border-top-left-radius: 30px; border-bottom-right-radius: 30px; margin:5px; padding:10px; width:200px;">
+        This div has radius applied only to top-left and bottom-right corners
+    </div> <hr>
+
+    <h4>Border-collapse</h4>
+    <ul>
+        <li>values: collapse, separate</li>
+        <li><b>Syntax :</b> border-collapse: value;</li>
+        <li>applies only to table elements</li>
+    </ul>
+
+    <!-- Examples -->
+    <table style="border: 2px solid black; border-collapse: collapse; margin:10px;">
+        <tr>
+            <td style="border: 2px solid red; padding:5px;">Collapse Example</td>
+            <td style="border: 2px solid red; padding:5px;">Borders collapse into single line</td>
+        </tr>
+    </table>
+
+    <table style="border: 2px solid black; border-collapse: separate; margin:10px; border-spacing: 10px;">
+        <tr>
+            <td style="border: 2px solid blue; padding:5px;">Separate Example</td>
+            <td style="border: 2px solid blue; padding:5px;">Borders remain distinct with spacing</td>
+        </tr>
+    </table>
+
+    <table style="border: 2px solid green; border-collapse: separate; margin:10px; border-spacing: 0;">
+        <tr>
+            <td style="border: 2px solid green; padding:5px;">Separate (no spacing)</td>
+            <td style="border: 2px solid green; padding:5px;">Borders remain distinct but touch</td>
+        </tr>
+    </table>
+</body>
+</html>
